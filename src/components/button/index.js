@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.css';
 
-export default function Button ({label}) {
-  return <div data-testid="button" className='my-button'>hello {label}</div>  
+const Button = ({label}) => {
+  return <div data-testid="button" className='my-button'>hi {label}</div>
 }
+
+export default Button;
