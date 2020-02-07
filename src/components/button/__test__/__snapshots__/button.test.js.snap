@@ -1,11 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshot 1`] = `
-<div
-  className="my-button"
-  data-testid="button"
->
-  hi 
-  save
+exports[`Buttons render matches snapshot 1`] = `
+<div>
+  <div
+    className="my-button"
+    data-testid="button"
+  >
+    hi 
+    save
+  </div>
+  <button
+    className="my-button"
+    onClick={[Function]}
+  >
+    Up
+  </button>
+  <button
+    className="my-button"
+    onClick={[Function]}
+  >
+    Down
+  </button>
+  <div
+    data-testid="count"
+  >
+    0
+  </div>
 </div>
 `;
