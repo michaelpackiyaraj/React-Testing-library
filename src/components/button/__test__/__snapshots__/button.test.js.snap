@@ -5,6 +5,7 @@ exports[`Buttons render matches snapshot 1`] = `
   <div
     className="my-button"
     data-testid="button"
+    onClick={[Function]}
   >
     hi 
     save

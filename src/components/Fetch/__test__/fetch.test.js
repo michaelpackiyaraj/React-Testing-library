@@ -2,7 +2,7 @@ import React from 'react';
 import { render, waitForElement } from '@testing-library/react';
 import "@testing-library/jest-dom/extend-expect";
 
-import axiosMock from "./../__mocks__/axios";
+import axiosMock from "axios";
 import Fetch from './../index';
 
 describe("Testing a mock Axios request", () => {
@@ -17,8 +17,8 @@ describe("Testing a mock Axios request", () => {
            return getByTestId("resolved")
         });
         expect(resolvedSpan).toHaveTextContent('Hello there');
-        //expect(resolvedSpan).toHaveBeenCalledTimes(1);
-        //expect(resolvedSpan).toHaveBeenCalledWith(url);
+        expect(axiosMock.get).toHaveBeenCalledTimes(1);
+         //  expect(axiosMock.get).toHaveBeenCalledWith(url);
         //https://www.youtube.com/watch?v=Ngj2f1n9pUw
     })
 });
